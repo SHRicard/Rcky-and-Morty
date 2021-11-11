@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: rgb(19, 252, 11);
+  background-color: #610094;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Navigation  */
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+.nav-brond {
+  width: 50px;
+}
+/* Navigation LEFT */
+
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul li {
+  padding: 10px;
+}
+.nav-main ul li a {
+  padding: 6px;
+}
+.nav-main ul li a:hover {
+  border-bottom: 2px solid rgb(12, 255, 65);
+}
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* ShowCase */
+
+hr {
+  margin: 10px 0;
+}
+.showcase {
+  width: 100%;
+  height: 900px;
+  background: url("./img/rym.jpg") no-repeat center/cover;
+  padding: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #f702ff;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  border: 3px solid rgb(24, 184, 184);
+  margin: 10px 0;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+/* NewCards */
+
+.new-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 10px 0;
+}
+.new-cards img {
+  width: 400px;
+  height: 400px;
+}
+.new-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.new-cards a {
+  padding: 10px 0;
+  color: cyan;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: bold;
+}
+.new-cards a:hover {
+  text-decoration: underline;
+}
+
+/* Banner Rick and Morty */
+
+.cards-banner-one {
+  width: 100%;
+  height: 550px;
+  background: url("./img/bannner23.png") no-repeat center/cover;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  margin-bottom: 50px;
+}
+.cards-banner-one .content {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: rgb(12, 175, 250);
+}
+.cards-banner-one p,
+.cards-banner-one h2 {
+  margin: 10px 20px 0 0;
+}
+
+/* banner two */
+.cards-banner-two {
+  width: 100%;
+  height: 550px;
+  background: url("./img/grande.jpn.jpg") no-repeat center/cover;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  margin-bottom: 50px;
+}
+.cards-banner-two .content {
+  width: 50%;
+  padding: 100px 0 0 30px;
+  color: rgb(12, 175, 250);
+}
+/* social */
+
+.social {
+  margin: 50px;
+}
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link a {
+  margin: 0 30px;
+}
+.link a i {
+  font-size: 3rem;
+}
+
+/* footet link */
+
+.footer-link {
+  background: #2f3640;
+  color: #616116;
+  font-size: 12px;
+  padding: 35px 0;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-container ul {
+  margin: 0 auto;
+}
+.footer-container ul li {
+  line-height: 2.8;
+}
+.footer {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .new-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

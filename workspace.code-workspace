@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "..\\Noticias"
+	},
+	{
+		"path": "..\\Proyectos\\Rick and Morty"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Noticias"
+  }
+}
